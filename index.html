@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+    <center><div id="container" width=1000 height=1000></div></center>
+    <script>
+        var button = document.createElement("button");
+        button.innerHTML = "Select";
+        var body = document.getElementsByTagName("body")[0];
+        body.appendChild(button);
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        button.addEventListener ("click", function() {
+          var file = prompt()
+          player.load("flashgames/" + file + ".swf");
+        });
+    });
+    </script>
+    <script src="ruffle/ruffle.js"></script>
+    <embed src="flashgames" height=500 width=500>
+</html>
