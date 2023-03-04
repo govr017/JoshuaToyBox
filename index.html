@@ -48,6 +48,7 @@
                 case 'LI':
                     if (confirm("Launch " + event.target.innerText + "?") == true) {
                       player.load("flashgames/" + event.target.innerText)
+                      scroll(0,0)
                     }
 
                 break;
@@ -63,17 +64,8 @@
     </script>
     <script src="ruffle/ruffle.js"></script>
     <style>
-      #container {
-        border: 10px solid purple;
-        margin-right: 600px;
-        margin-left: 700px;
-        margin-bottom: 15px;
-      }
       body {
         background-image: url("pizza.png");
-      }
-      ul {
-        list-style-type: none;
       }
       li {
         font-family: 'Cairo Play', cursive;
@@ -83,5 +75,5 @@
         margin-bottom: 10px;
       }
     </style>
-    <ul id="games"></ul>
+    <ol id="games"></ol>
 </html>
