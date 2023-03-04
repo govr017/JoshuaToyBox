@@ -2,282 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Mostly school stuff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@600&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <center><div id="container" width=1000 height=1000></div></center>
+    <center><div id="container" width=500 height=500></div></center>
     <script>
-        var button = document.createElement("button");
-        button.innerHTML = "Select";
+        //var button = document.createElement("button");
+        //button.innerHTML = "Select";
         var body = document.getElementsByTagName("body")[0];
-        body.appendChild(button);
+        //body.appendChild(button);
         window.RufflePlayer = window.RufflePlayer || {};
         window.addEventListener("load", (event) => {
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
         const container = document.getElementById("container");
         container.appendChild(player);
-        button.addEventListener ("click", function() {
-          var file = prompt()
-          player.load("flashgames/" + file + ".swf");
+        //button.addEventListener ("click", function() {
+        //  var file = prompt()
+        //  player.load("flashgames/" + file + ".swf");
+        //});
+        let data = ['Abduction.swf', 'Achievment -Unlocked-3.swf', 'Achievment-Unlocked-2.swf', 'Achievment-Unlocked.swf', 'Age_Of _War_2.swf', 'Age_Of_War.swf', 'Age_Of_War_3.swf', 'Age_Of_War_7.swf', 'Apple_Shooter.swf', 'ARCS.swf', 'Armor_Mayhem.swf', 'Bad_Piggies.swf', 'BattleShips.swf', 'Beat_Up_Your_PC.swf', 'Bejweled_2.swf', 'Big_Red_Button.swf', 'Bloons-Players-Pack-2.swf', 'Bloons-Players-Pack-3.swf', 'Bloons-Players-Pack-4.swf', 'Bloons-Players-Pack-5.swf', 'Bloons-Players-Pack.swf', 'Bloons-Pop-3.swf', 'Bloons_Super-Monkey.swf', 'Bloons_Tower_Defense.swf', 'Bloons_Tower_Defense_2.swf', 'Bloons_Tower_Defense_3.swf', 'Bloons_Tower_Defense_4.swf', 'Bloons_Tower_Defense_4_Expansion.swf', 'Bloons_Tower_Defense_5.swf', 'Bloxorz.swf', 'BoomBot 2.swf', 'BoomBot.swf', 'Breaking_Into_The_Bank.swf', 'Bridge-Tactics.swf', 'Building_Demolisher.swf', 'Cactus_MCOY.swf', 'Cactus_MCOY_2.swf', 'Canyon Defense.swf', 'Cat Mario.swf', 'Causality-Camp.swf', 'Causality-Festival.swf', 'Causality-Kitchen.swf', 'Caveman.swf', 'Chibi_Knight Hacked.swf', 'Chibi_Knight.swf', 'Chinese-Checkers.swf', 'Click-Death-Bowling.swf', 'Cooking Mama Kills Animals.swf', 'Cover-Orange-Journey-Pirates.swf', 'Cover-Orange-Knights.swf', 'Cover-Orange-Wild-West.swf', 'Cover_Orange.swf', 'Crush_the_Castle_2.swf', 'Cubefield.swf', 'Cube_Droid_Saves_The_Galaxy.swf', 'Cursor_Invisible.swf', 'DaC_Ep27.swf', 'Dead Paradise 2.swf', 'Dino_Run.swf', 'Dog Fight Sim.swf', 'Doodlegod.swf', 'Duck Hunt.swf', 'Duck_Life_1.swf', 'Duck_Life_2.swf', 'Duck_Life_2_Hacked.swf', 'Duck_Life_3.swf', 'Duck_Life_3_Hacked.swf', 'Duck_Life_4.swf', 'Duck_Life_4_Hacked.swf', 'Dumper-Truck.swf', 'Earn_To_Die.swf', 'Earn_To_Die_2012.swf', 'Earn_To_Die_2012_Part_2.swf', 'ElectricMan_2.swf', 'ElectricMan_2_Hacked.swf', 'End _of_The_World.swf', 'Escaping_The_Prison.swf', 'Fancy_Pants_World_1.swf', 'Fancy_Pants_World_2.swf', 'Feed-Us-1.swf', 'Feed-Us-2.swf', 'Feed-Us-3.swf', 'Feed-Us-4.swf', 'Feed-Us-5.swf', 'Feed-Us-Happy.swf', 'Feed-Us-Lost-Island.swf', 'Feed-Us-Pirates.swf', 'Feed-Us-Xmas-Expansion.swf', 'FireBoy_and_Watergirl_1-In_The_Forest_Temple.swf', 'FireBoy_and_Watergirl_2-The_Light_Temple.swf', 'FireBoy_and_Watergirl_3-In_The_Forest_Temple.swf', 'FireBoy_and_Watergirl_4-The_Crystal_Temple.swf', 'Flappy-Bird.swf', 'Fleeing_the_Complex.swf', 'Flight.swf', 'Fling-Ecommerce.swf', "Foster's Home for Imaginary Friends - Wilt's Wash N' Swoosh.swf", 'Fragger.swf', 'Give Up 2.swf', 'Give Up.swf', 'Gluey_2.swf', 'Gold-Miner Special Editon.swf', 'Gold-Miner-Hacked.swf', 'Gold-Miner.swf', 'Gravity_Duck_Hacked.swf', 'Grow-Cube.swf', 'Grow-Island.swf', 'Grow-Nano.swf', 'Grow-Valley.swf', 'Gun_Blood.swf', 'Gun_Mayhem.swf', 'Gun_Mayhem_2.swf', 'Handless_Millionaire.swf', 'Haunt-The-House.swf', 'I Dont Even Know.swf', 'i saw her too, with lasers.swf', 'Ice-Breaker.swf', 'Infiltrating_The_Airship.swf', 'Jack_Smith.swf', 'Jump It! 2.swf', 'Jump It!.swf', 'Kingdom Rush Frontiers.swf', 'Kingdom Rush.swf', 'Kitten Cannon.swf', 'KND - Flight of the Hamster.swf', "KND - Operation Z.E.R.O Outnumbuh'd!.swf", 'KND - Rainbow Monkey Rundown.swf', 'Learn To Fly.swf', 'Learn_To_Fly_2.swf', 'Mahjong.swf', 'Me and the Key 2.swf', 'Me and the Key.swf', 'MeatBoy.swf', 'Mecha Arena.swf', 'Meeblings-2.swf', 'Miami_Shark.swf', 'Minecraft_Tower_Defense.swf', 'Minecraft_Tower_Defense_2.swf', 'Mine_Blocks.swf', 'Miragine War.swf', 'Nyan-Cat-Lost-In-Space.swf', 'Obey The Game.swf', 'Off-The-Rails.swf', 'Pandemic 2.swf', "Papa's_Burgeria.swf", "Papa's_Cheezeria.swf", "Papa's_Cupcakeria.swf", "Papa's_Donuteria.swf", "Papa's_Freezeria.swf", "Papa's_Hotdogeria.swf", "Papa's_Pancakeria.swf", "Papa's_Pasteria.swf", "Papa's_Pizzeria.swf", "Papa's_Taco_Mia.swf", "Papa's_Wingeria.swf", 'Papa_Louie.swf', "Papa_Louie_2_When_Pizza's_Attacked.swf", 'Papa_Louie_3.swf', 'Penguin_Diner.swf', 'Penguin_Diner_2.swf', 'Pixel_Chix_Jammin_Hamster.swf', 'Pixel_Chix_Monster_Baby.swf', 'Plazma Burst 2 Hacked.swf', 'Plazma Burst 2.swf', 'Pokemon Tower Defense 2.swf', 'Pokemon-Tower-Defense.swf', 'Pong.swf', 'Poop_Clicker.swf', 'Portal The Flash Version.swf', 'Potty_Racers.swf', 'Potty_Racers_2.swf', 'Potty_Racers_2_Hacked.swf', 'Potty_Racers_3.1.swf', 'Potty_Racers_3.swf', 'Potty_Racers_4.swf', 'Potty_Racers_4_Hacked.swf', 'Potty_Racers_Hacked.swf', 'QWOP.swf', 'Raft_Wars.swf', 'Raft_Wars_2.swf', 'Realm Of The Mad God.swf', 'ReimagineThe Game.swf', 'Revenge-Of-The-Stickman.swf', 'Road Rush.swf', 'Robot-Unicorn-Attack.swf', 'Robot-Unicorn-Heavy-Metal.swf', 'Rotate And Roll Players Pack.swf', 'Rotate And Roll.swf', 'Run 2.swf', 'Run_And_Gun.swf', 'Sand Castle.swf', 'Shop Empire 3.swf', 'Shopping Cart Hero.swf', 'Shopping_City.swf', 'Shopping_Street.swf', 'Skies of War.swf', 'Skin-Craft.swf', 'Skull-Kid.swf', 'Sling-Junior.swf', 'Slingette.swf', 'Small-Town-Racing.swf', 'Snail Bob 2.swf', 'Snail Bob 3.swf', 'Snail Bob 4 Space.swf', 'Snail Bob 5 Love Story.swf', 'Snail Bob 6 Winter Story.swf', 'Snail Bob 7 Fantasy Story.swf', 'Snail Bob.swf', 'Sniper Assassin 2.swf', 'Sniper Assassin 3.swf', 'Sniper Assassin 4.swf', 'Sniper Assassin 5.swf', 'Sniper Assassin.swf', 'Sniper Team.swf', 'Sonic-Lost-In-Mario-World.swf', 'Space Flash Arena.swf', 'Stealing_The_Diamond_RIGHT_CLICK_THEN_CLICK_PLAY.swf', 'Stick War.swf', 'Stickman-Badminton.swf', 'Stick_Squad.swf', 'Stick_Squad_Hacked.swf', 'Super Mario 63.swf', 'Super Mario Flash.swf', 'Super Sudoku 2011.swf', 'Super-Drift-3D.swf', 'Super-Mario-Crossover-2.swf', 'Sushi_Cat.swf', 'T-Rex.swf', 'the game.swf', 'The Grim Adventures of Billy and Mandy - Magnet Face.swf', 'The Grim Adventures of Billy and Mandy - The Fright Before Christmas.swf', 'The Impossible Quiz.swf', 'The Last Stand 2.swf', 'The Last Stand 3.swf', 'The Last Stand.swf', "The World's Hardest Game 2.swf", "The World's Hardest Game 3.swf", "The World's Hardest Game.swf", 'This is the only level too.swf', 'This is the only level.swf', 'Tom and Jerry - Refriger-Raiders.swf', "Tom and Jerry - Tom's Trap-O-Matic.swf", 'Truck Loader 2.swf', 'Truck Loader 4.swf', 'Ultimate Flash Sonic.swf', 'Unfair-Mario.swf', 'Upgrade Complete.swf', 'Video Game The Game.swf', 'Weapon - Black Hawk.swf', 'Worm-Food.swf'];
+        let list = document.getElementById("games");
+        data.forEach((item) => {
+          let li = document.createElement("li");
+          li.innerText = item;
+          list.appendChild(li)
         });
+        document.addEventListener( 'click', mouseEventsListener);
+
+        function mouseEventsListener ( event ) {
+
+            
+            switch( event.target.tagName ) {
+
+                case 'LI':
+                    if (confirm("Launch " + event.target.innerText + "?") == true) {
+                      player.load("flashgames/" + event.target.innerText)
+                    }
+
+                break;
+
+            default:
+                
+                break;
+
+            }
+
+        }
     });
     </script>
     <script src="ruffle/ruffle.js"></script>
     <style>
-      #list {
-        width: 200px;
-        font-size: 20px
+      #container {
+        border: 10px solid purple;
+        margin-right: 600px;
+        margin-left: 700px;
+        margin-bottom: 15px;
+      }
+      body {
+        background-image: url("pizza.png");
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        font-family: 'Cairo Play', cursive;
+        font-size: 25px
+      }
+      li:not(:last-child) {
+        margin-bottom: 10px;
       }
     </style>
-    <div id="list">Abduction;
-    Achievment-Unlocked-2;
-    Achievment -Unlocked-3;
-    Achievment-Unlocked;
-    Age_Of _War_2;
-    Age_Of_War_3;
-    Age_Of_War_7;
-    Age_Of_War;
-    Apple_Shooter;
-    ARCS;
-    Armor_Mayhem;
-    Bad_Piggies;
-    BattleShips;
-    Beat_Up_Your_PC;
-    Bejweled_2;
-    Big_Red_Button;
-    Bloons-Players-Pack-2;
-    Bloons-Players-Pack-3;
-    Bloons-Players-Pack-4;
-    Bloons-Players-Pack-5;
-    Bloons-Players-Pack;
-    Bloons-Pop-3;
-    Bloons_Super-Monkey;
-    Bloons_Tower_Defense_2;
-    Bloons_Tower_Defense_3;
-    Bloons_Tower_Defense_4_Expansion;
-    Bloons_Tower_Defense_4;
-    Bloons_Tower_Defense_5;
-    Bloons_Tower_Defense;
-    Bloxorz;
-    BoomBot 2;
-    BoomBot;
-    Breaking_Into_The_Bank;
-    Bridge-Tactics;
-    Building_Demolisher;
-    Cactus_MCOY_2;
-    Cactus_MCOY;
-    Canyon Defense;
-    Cat Mario;
-    Causality-Camp;
-    Causality-Festival;
-    Causality-Kitchen;
-    Caveman;
-    Chibi_Knight Hacked;
-    Chibi_Knight;
-    Chinese-Checkers;
-    Click-Death-Bowling;
-    Cooking Mama Kills Animals;
-    Cover-Orange-Journey-Pirates
-    Cover-Orange-Knights;
-    Cover_Orange;
-    Cover-Orange-Wild-West;
-    Crush_the_Castle_2;
-    Cube_Droid_Saves_The_Galaxy;
-    Cubefield;
-    Cursor_Invisible;
-    DaC_Ep27;
-    Dead Paradise 2;
-    Dino_Run;
-    Dog Fight Sim;
-    Doodlegod;
-    Duck Hunt;
-    Duck_Life_1;
-    Duck_Life_2_Hacked;
-    Duck_Life_2;
-    Duck_Life_3_Hacked;
-    Duck_Life_3;
-    Duck_Life_4_Hacked;
-    Duck_Life_4;
-    Dumper-Truck;
-    Earn_To_Die_2012_Part_2;
-    Earn_To_Die_2012;
-    Earn_To_Die;
-    ElectricMan_2_Hacked;
-    ElectricMan_2;
-    End _of_The_World;
-    Escaping_The_Prison;
-    Fancy_Pants_World_1;
-    Fancy_Pants_World_2;
-    Feed-Us-1;
-    Feed-Us-2;
-    Feed-Us-3;
-    Feed-Us-4;
-    Feed-Us-5;
-    Feed-Us-Happy;
-    Feed-Us-Lost-Island;
-    Feed-Us-Pirates;
-    Feed-Us-Xmas-Expansion;
-    FireBoy_and_Watergirl_1-In_The_Forest_Temple;
-    FireBoy_and_Watergirl_2-The_Light_Temple;
-    FireBoy_and_Watergirl_3-In_The_Forest_Temple;
-    FireBoy_and_Watergirl_4-The_Crystal_Temple;
-    Flappy-Bird;
-    Fleeing_the_Complex;
-    Flight;
-    Fling-Ecommerce;
-    Fosters Home for Imaginary Friends - Wilts Wash N Swoosh;
-    Fragger;
-    Give Up 2;
-    Give Up;
-    Gluey_2;
-    Gold-Miner-Hacked;
-    Gold-Miner Special Editon;
-    Gold-Miner;
-    Gravity_Duck_Hacked;
-    Grow-Cube;
-    Grow-Island;
-    Grow-Nano;
-    Grow-Valley;
-    Gun_Blood;
-    Gun_Mayhem_2;
-    Gun_Mayhem;
-    Handless_Millionaire;
-    Haunt-The-House;
-    Ice-Breaker;
-    I Dont Even Know;
-    Infiltrating_The_Airship;
-    i saw her too, with lasers;
-    Jack_Smith;
-    Jump It! 2;
-    Jump It!;
-    Kingdom Rush Frontiers;
-    Kingdom Rush;
-    Kitten Cannon;
-    KND - Flight of the Hamster;
-    KND - Operation Z.E.R.O Outnumbuh\d!;
-    KND - Rainbow Monkey Rundown;
-    Learn_To_Fly_2;
-    Learn To Fly;
-    Mahjong;
-    Me and the Key 2;
-    Me and the Key;
-    MeatBoy;
-    Mecha Arena;
-    Meeblings-2;
-    Miami_Shark;
-    Mine_Blocks;
-    Minecraft_Tower_Defense_2;
-    Minecraft_Tower_Defense;
-    Miragine War;
-    Nyan-Cat-Lost-In-Space;
-    Obey The Game;
-    Off-The-Rails;
-    Pandemic 2;
-    Papa_Louie_2_When_Pizzas_Attacked;
-    Papa_Louie_3;
-    Papa_Louie;
-    Papas_Burgeria;
-    Papas_Cheezeria;
-    Papas_Cupcakeria;
-    Papas_Donuteria;
-    Papas_Freezeria;
-    Papas_Hotdogeria;
-    Papas_Pancakeria;
-    Papas_Pasteria;
-    Papas_Pizzeria;
-    Papas_Taco_Mia;
-    Papas_Wingeria;
-    Penguin_Diner_2;
-    Penguin_Diner;
-    Pixel_Chix_Jammin_Hamster;
-    Pixel_Chix_Monster_Baby;
-    Plazma Burst 2 Hacked;
-    Plazma Burst 2;
-    Pokemon Tower Defense 2;
-    Pokemon-Tower-Defense;
-    Pong;
-    Poop_Clicker;
-    Portal The Flash Version;
-    Potty_Racers_2_Hacked;
-    Potty_Racers_2;
-    Potty_Racers_3.1;
-    Potty_Racers_3;
-    Potty_Racers_4_Hacked;
-    Potty_Racers_4;
-    Potty_Racers_Hacked;
-    Potty_Racers;
-    QWOP;
-    Raft_Wars_2;
-    Raft_Wars;
-    Realm Of The Mad God;
-    ReimagineThe Game;
-    Revenge-Of-The-Stickman;
-    Road Rush;
-    Robot-Unicorn-Attack;
-    Robot-Unicorn-Heavy-Metal;
-    Rotate And Roll Players Pack;
-    Rotate And Roll;
-    Run 2;
-    Run_And_Gun;
-    Sand Castle;
-    Shop Empire 3;
-    Shopping Cart Hero;
-    Shopping_City;
-    Shopping_Street;
-    Skies of War;
-    Skin-Craft;
-    Skull-Kid;
-    Slingette;
-    Sling-Junior;
-    Small-Town-Racing;
-    Snail Bob 2;
-    Snail Bob 3;
-    Snail Bob 4 Space;
-    Snail Bob 5 Love Story;
-    Snail Bob 6 Winter Story;
-    Snail Bob 7 Fantasy Story;
-    Snail Bob;
-    Sniper Assassin 2;
-    Sniper Assassin 3;
-    Sniper Assassin 4;
-    Sniper Assassin 5;
-    Sniper Assassin;
-    Sniper Team;
-    Sonic-Lost-In-Mario-World;
-    Space Flash Arena;
-    Stealing_The_Diamond_RIGHT_CLICK_THEN_CLICK_PLAY;
-    Stickman-Badminton;
-    Stick_Squad_Hacked;
-    Stick_Squad;
-    Stick War;
-    Super-Drift-3D;
-    Super Mario 63;
-    Super-Mario-Crossover-2;
-    Super Mario Flash;
-    Super Sudoku 2011;
-    Sushi_Cat;
-    the game;
-    The Grim Adventures of Billy and Mandy - Magnet Face;
-    The Grim Adventures of Billy and Mandy - The Fright Before Christmas;
-    The Impossible Quiz;
-    The Last Stand 2;
-    The Last Stand 3;
-    The Last Stand;
-    The Worlds Hardest Game 2;
-    The Worlds Hardest Game 3;
-    The Worlds Hardest Game;
-    This is the only level;
-    This is the only level too;
-    Tom and Jerry - Refriger-Raiders;
-    Tom and Jerry - Toms Trap-O-Matic;
-    T-Rex;
-    Truck Loader 2;
-    Truck Loader 4;
-    Ultimate Flash Sonic;
-    Unfair-Mario;
-    Upgrade Complete;
-    Video Game The Game;
-    Weapon - Black Hawk;
-    Worm-Food;</div>
+    <ul id="games"></ul>
 </html>
