@@ -1,10 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mostly school stuff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@600&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
 <div style="width:640px;height:480px;max-width:100%">
         <div id="game"></div>
       </div>
-<script type="text/javascript">
+<ol id="games"></ol>
+<script src="https://www.emulatorjs.com/loader.js"></script>
+<script>
+    let game = prompt()
     EJS_player = '#game';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'roms/WarioWare, Inc. - Mega Microgame$! (USA).gba'; // Url to Game rom
+    EJS_gameUrl = 'roms/' + game; // Url to Game rom
     EJS_core = 'gba'; // Optional core: vbam, vbanext
+    let data = ['2 Games in 1 - SpongeBob SquarePants - SuperSponge & Revenge of the Flying Dutchman (U).gba', "2-in-1 - Dragon Ball Z Gamepack - Buu's Fury & GT - Transformation (U).gba", 'Kirby & The Amazing Mirror (USA).gba', 'Kirby - Nightmare in Dream Land (USA).gba', 'Legend of Zelda, The - The Minish Cap (Europe) (En,Fr,De,Es,It).gba', 'Mario & Luigi - Superstar Saga (Europe) (En,Fr,De,Es,It).gba', 'Mario Kart - Super Circuit (Europe).gba', 'Mario Party Advance (Europe) (En,Fr,De,Es,It).gba', 'Mario vs. Donkey Kong (Europe) (En,Fr,De,Es,It).gba', 'Super Mario Advance 2 - Super Mario World (Europe) (En,Fr,De,Es).gba', "Super Mario Advance 3 - Yoshi's Island (Europe) (En,Fr,De,Es,It).gba", 'Super Mario Advance 4 - Super Mario Bros. 3 (Europe) (En,Fr,De,Es,It) (Rev 1).gba', 'Super Mario Ball (Europe).gba', 'Wario Land 4 (USA, Europe).gba', 'WarioWare - Twisted! (No Gyro Fix).gba', 'WarioWare, Inc. - Mega Microgame$! (USA).gba'];
+    let list = document.getElementById("games");
+    data.forEach((item) => {
+      let li = document.createElement("li");
+      li.innerText = item;
+      list.appendChild(li);
+    });
 </script>
-<script src="https://www.emulatorjs.com/loader.js"></script>
+<style>
+  body {
+    background-image: url("pizza2.png");
+  }
+  li {
+    font-family: 'Cairo Play', cursive;
+    font-size: 25px
+  }
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+</style>
+</body>
